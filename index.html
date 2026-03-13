@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<title>Mina outfits</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f3f3f3;
+max-width:1000px;
+margin:auto;
+padding:20px;
+}
+
+h1{
+text-align:center;
+}
+
+.controls{
+display:flex;
+gap:10px;
+justify-content:center;
+margin-bottom:20px;
+flex-wrap:wrap;
+}
+
+button{
+padding:8px 12px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:10px;
+border-radius:8px;
+box-shadow:0 2px 8px rgba(0,0,0,0.15);
+text-align:center;
+}
+
+.card img{
+width:100%;
+border-radius:6px;
+}
+
+.favorite{
+background:#ffd54f;
+}
+
+.today{
+border:3px solid #4CAF50;
+}
+
+input{
+padding:6px;
+margin:5px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Mina outfits</h1>
+
+<div style="text-align:center;margin-bottom:20px">
+
+<input type="file" id="upload" accept="image/*"><br>
+
+<input id="name" placeholder="Outfit namn">
+
+<input id="tags" placeholder="Taggar (jobb, sommar...)">
+
+</div>
+
+<div class="controls">
+
+<button onclick="showAll()">Alla</button>
+<button onclick="showFavorites()">Favoriter ⭐</button>
+<button onclick="randomOutfit()">🎲 Slumpa outfit</button>
+
+</div>
+
+<div id="random"></div>
+
+<div id="grid" class="grid"></div>
+
+<script>
+
+let outfits = JSON.parse(localStorage.getItem("outfits")) || []
+
+let favorites = JSON.parse(localStorage.getItem("favorites")) || []
+
+let today = JSON.parse(localStorage.getItem("today")) || null
+
+let filter = "all"
+
+document.getElementById("upload").addEventListener("change",function(e){
+
+const file = e.target.files[0]
+
+const reader = new FileReader()
+
+reader.onload = function(event){
+
+const name = document.getElementById("name").value
+
+const tags = document.getElementById("tags").value.split(",")
+
+outfits.push({
+
+img:event.target.result,
+
+name:name,
+
+tags:tags
+
+})
+
+localStorage.setItem("outfits",JSON.stringify(outfits))
+
+render()
+
+}
+
+reader.readAsDataURL(file)
+
+})
+
+function render(){
+
+const grid = document.getElementById("grid")
+
+grid.innerHTML=""
+
+outfits.forEach((o,index)=>{
+
+if(filter==="favorites" && !favorites.includes(index)) return
+
+const card = document.createElement("div")
+
+let classes="card"
+
+if(today===index) classes+=" today"
+
+card.className=classes
+
+const fav = favorites.includes(index)
+
+card.innerHTML = `
+
+<img src="${o.img}">
+
+<h3>${o.name || "Outfit"}</h3>
+
+<p>${o.tags.join(", ")}</p>
+
+<button onclick="toggleFavorite(${index})"
+class="${fav ? "favorite":""}">
+⭐
+</button>
+
+<button onclick="setToday(${index})">
+📅
+</button>
+
+`
+
+grid.appendChild(card)
+
+})
+
+}
+
+function toggleFavorite(index){
+
+if(favorites.includes(index)){
+
+favorites = favorites.filter(i=>i!==index)
+
+}else{
+
+favorites.push(index)
+
+}
+
+localStorage.setItem("favorites",JSON.stringify(favorites))
+
+render()
+
+}
+
+function setToday(index){
+
+today=index
+
+localStorage.setItem("today",JSON.stringify(today))
+
+render()
+
+}
+
+function showAll(){
+
+filter="all"
+
+render()
+
+}
+
+function showFavorites(){
+
+filter="favorites"
+
+render()
+
+}
+
+function randomOutfit(){
+
+if(outfits.length===0) return
+
+const index=Math.floor(Math.random()*outfits.length)
+
+const o=outfits[index]
+
+document.getElementById("random").innerHTML=`
+
+<h2>Slumpad outfit</h2>
+
+<img src="${o.img}" style="max-width:300px">
+
+<p>${o.name}</p>
+
+`
+
+}
+
+render()
+
+</script>
+
+</body>
+</html>
