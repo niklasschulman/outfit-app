@@ -1,25 +1,376 @@
 [
 {
 "id":1,
-"name":"Jobb – kavaj",
+"name":"Måndag - Modern start",
 "image":"outfits/1.png",
-"season":["spring","autumn"],
-"occasion":["work"]
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
 },
 
 {
 "id":2,
-"name":"Helg – casual",
+"name":"Tisdag - Kontorsstil",
 "image":"outfits/2.png",
-"season":["spring","summer"],
-"occasion":["weekend"]
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
 },
 
 {
 "id":3,
-"name":"Sommar",
+"name":"Onsdag - Minimalistisk",
 "image":"outfits/3.png",
-"season":["summer"],
-"occasion":["weekend"]
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":4,
+"name":"Torsdag - Stilren skjorta",
+"image":"outfits/4.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":5,
+"name":"Fredag - Avslappnad kontorslook",
+"image":"outfits/5.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":6,
+"name":"Lördag - Casual",
+"image":"outfits/6.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":8,
+"name":"Måndag - Overshirt look",
+"image":"outfits/8.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":9,
+"name":"Tisdag - Smart casual",
+"image":"outfits/9.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":10,
+"name":"Onsdag - Enkel stil",
+"image":"outfits/10.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":11,
+"name":"Torsdag - Modern layering",
+"image":"outfits/11.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":12,
+"name":"Fredag - Lätt casual",
+"image":"outfits/12.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":13,
+"name":"Lördag - Avslappnad stil",
+"image":"outfits/13.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":14,
+"name":"Genbild 15",
+"image":"outfits/14.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":44,
+"name":"Genbild 11",
+"image":"outfits/44.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":15,
+"name":"Extra 1 - Den moderna lageroutfiten",
+"image":"outfits/15.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":16,
+"name":"Extra 2 - Smart casual utan kavaj",
+"image":"outfits/16.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":17,
+"name":"Extra 3 - Casual kavajlook",
+"image":"outfits/17.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":18,
+"name":"Extra 4 - Lätt vår/sommar-outfit",
+"image":"outfits/18.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":19,
+"name":"Extra 5",
+"image":"outfits/19.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":20,
+"name":"Extra 6",
+"image":"outfits/20.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":21,
+"name":"Extra 7",
+"image":"outfits/21.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":22,
+"name":"Flannell 1",
+"image":"outfits/22.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":23,
+"name":"Flanell 2",
+"image":"outfits/23.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":24,
+"name":"Flanell 3",
+"image":"outfits/24.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":25,
+"name":"Flanell 4",
+"image":"outfits/25.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":26,
+"name":"Chat 1 1",
+"image":"outfits/26.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":27,
+"name":"Chat 1 2",
+"image":"outfits/27.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":28,
+"name":"Chat 1 3",
+"image":"outfits/28.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":29,
+"name":"Chat 1 5 Smart casual med struktur",
+"image":"outfits/29.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":30,
+"name":"Chat 1 6 Avslappnad kavaj-look",
+"image":"outfits/30.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":31,
+"name":"Chat 1 7 Ton-i-ton",
+"image":"outfits/31.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":32,
+"name":"Chat 1 8 Ledig men genomtänkt vardag",
+"image":"outfits/32.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":33,
+"name":"Chat 2 1",
+"image":"outfits/33.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":34,
+"name":"Genbild 1",
+"image":"outfits/34.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":35,
+"name":"Genbild 2",
+"image":"outfits/35.png","season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":36,
+"name":"Genbild 3",
+"image":"outfits/36.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":37,
+"name":"Genbild 4",
+"image":"outfits/37.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":38,
+"name":"Genbild 5",
+"image":"outfits/38.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":39,
+"name":"Genbild 6",
+"image":"outfits/39.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":40,
+"name":"Genbild 7",
+"image":"outfits/40.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":41,
+"name":"Genbild 8",
+"image":"outfits/41.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":42,
+"name":"Genbild 9",
+"image":"outfits/42.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":43,
+"name":"Genbild 10",
+"image":"outfits/43.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":45,
+"name":"Genbild 12",
+"image":"outfits/45.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":46,
+"name":"Genbild 13",
+"image":"outfits/46.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":47,
+"name":"Genbild 14",
+"image":"outfits/47.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":48,
+"name":"Genbild 16",
+"image":"outfits/48.png",
+"season":["spring","autumn","summer","winter"],
+"occasion":["work","weekend"]
 }
 ]
