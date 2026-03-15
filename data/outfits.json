@@ -1,48 +1,371 @@
 [
-{"id":1,"name":"Nordic Field Casual","image":"outfits//1.png", "season":["vår","höst"],"occasion":["work","weekend"]},
-{"id":2,"name":"Blue Executive Denim","image":"outfits/2.png","season":["vår","höst"],"occasion":["work"]},
-{"id":3,"name":"Winter Denim Knit","image":"outfits/3.png","season":["höst","vinter"],"occasion":["weekend"]},
-{"id":4,"name":"Summer Office Classic","image":"outfits/4.png","season":["vår","sommar"],"occasion":["work","weekend"]},
-{"id":5,"name":"Fredag 1: Modern Smart Casual","image":"outfits/5.png","season":["vår","höst"],"occasion":["work","weekend"]},
-{"id":6,"name":"Lördag 1: Riviera Weekend","image":"outfits/6.png","season":["sommar"],"occasion":["weekend"]},
-{"id":8,"name":"Fredag 2: Casual Blazer Boots","image":"outfits/8.png","season":["vår","höst"],"occasion":["work","weekend"]},
-{"id":9,"name":"Onsdag 1: Executive Denim","image":"outfits/9.png","season":["vår","höst"],"occasion":["work"]},
-{"id":10,"name":"Nordic Winter Minimal","image":"outfits/10.png","season":["vinter"],"occasion":["weekend"]},
-{"id":11,"name":"Forest Layer","image":"outfits/11.png","season":["vår","höst"],"occasion":["work","weekend"]},
-{"id":12,"name":"Summer Minimal Classic","image":"outfits/12.png","season":["sommar"],"occasion":["weekend"]},
-{"id":13,"name":"Black Tee Denim","image":"outfits/13.png","season":["vår","sommar"],"occasion":["weekend"]},
-{"id":14,"name":"Skogschinos","image":"outfits/14.png","season":["vår","höst"],"occasion":["work","weekend"]},
-{"id":44,"name":"Tisdag 1: Skjorta i grön ram","image":"outfits/44.png","season":["vår","höst"],"occasion":["work"]},
-{"id":15,"name":"Stadsskjorta","image":"outfits/15.png","season":["vår"],"occasion":["work","weekend"]},
-{"id":16,"name":"Onsdag 2: Klassisk denim","image":"outfits/16.png","season":["vår","höst"],"occasion":["work","weekend"]},
-{"id":17,"name":"Pariskavajen","image":"outfits/17.png","season":["vår"],"occasion":["work","weekend"]},
-{"id":18,"name":"Enkel sommarbas","image":"outfits/18.png","season":["sommar"],"occasion":["weekend"]},
-{"id":19,"name":"Måndag 1: Casual kontor","image":"outfits/19.png","season":["vår","sommar"],"occasion":["work"]},
-{"id":20,"name":"Marin kväll","image":"outfits/20.png","season":["höst"],"occasion":["weekend"]},
-{"id":21,"name":"Tisdag 2: Ljus vardagsskjorta","image":"outfits/21.png","season":["vår","sommar"],"occasion":["work","weekend"]},
-{"id":22,"name":"Modern flanell","image":"outfits/22.png","season":["höst","vinter"],"occasion":["work"]},
-{"id":23,"name":"Vinterminimalist","image":"outfits/23.png","season":["vinter"],"occasion":["work","weekend"]},
-{"id":24,"name":"Kontorskavaj","image":"outfits/24.png","season":["höst","vinter"],"occasion":["work"]},
-{"id":25,"name":"Torsdag 2: Grön kontorscasual","image":"outfits/25.png","season":["höst"],"occasion":["work"]},
-{"id":26,"name":"Marin helg","image":"outfits/26.png","season":["sommar"],"occasion":["weekend"]},
-{"id":27,"name":"Klassisk vinterlager","image":"outfits/27.png","season":["vinter"],"occasion":["work"]},
-{"id":28,"name":"Skogsminimalism","image":"outfits/28.png","season":["vår","sommar"],"occasion":["weekend"]},
-{"id":29,"name":"Ljus denimdag","image":"outfits/29.png","season":["sommar"],"occasion":["weekend"]},
-{"id":30,"name":"Måndag 2: Mjuk kontorskavaj","image":"outfits/30.png","season":["höst"],"occasion":["work"]},
-{"id":31,"name":"Urban komfort","image":"outfits/31.png","season":["höst","vinter"],"occasion":["weekend"]},
-{"id":32,"name":"Skogspromenad","image":"outfits/32.png","season":["vår"],"occasion":["weekend"]},
-{"id":34,"name":"Ren flanell","image":"outfits/34.png","season":["höst","vinter"],"occasion":["work"]},
-{"id":35,"name":"Lördag 2: Rost & denim","image":"outfits/35.png","season":["höst"],"occasion":["weekend"]},
-{"id":36,"name":"Fransk vinter","image":"outfits/36.png","season":["höst","vinter"],"occasion":["work"]},
-{"id":37,"name":"Torsdag 1: Grön vardag","image":"outfits/37.png","season":["vår","höst"],"occasion":["work","weekend"]},
-{"id":38,"name":"Brun flanell","image":"outfits/38.png","season":["höst","vinter"],"occasion":["work","weekend"]},
-{"id":39,"name":"Ljus kontorsbas","image":"outfits/39.png","season":["vår"],"occasion":["work"]},
-{"id":40,"name":"Höstchinos","image":"outfits/40.png","season":["höst"],"occasion":["work","weekend"]},
-{"id":41,"name":"Denimlager","image":"outfits/41.png","season":["vår"],"occasion":["weekend"]},
-{"id":42,"name":"Casual kavajdag","image":"outfits/42.png","season":["vår"],"occasion":["work"]},
-{"id":43,"name":"Sommarskjorta","image":"outfits/43.png","season":["sommar"],"occasion":["work","weekend"]},
-{"id":45,"name":"Vit tee-klassikern","image":"outfits/45.png","season":["sommar"],"occasion":["weekend"]},
-{"id":46,"name":"Söndag 1: Höst i beige","image":"outfits/46.png","season":["höst"],"occasion":["weekend"]},
-{"id":47,"name":"Söndag 2: Stickad helg","image":"outfits/47.png","season":["höst","vinter"],"occasion":["weekend"]},
-{"id":48,"name":"Ljus denimskjorta","image":"outfits/48.png","season":["sommar"],"occasion":["work","weekend"]},
+{
+"id":1,
+"name":"Nordic Field Casual",
+"image":"outfits//1.png",
+"season":["vår","höst"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":2,
+"name":"Blue Executive Denim",
+"image":"outfits/2.png",
+"season":["vår","höst"],
+"occasion":["work"]
+},
+
+{
+"id":3,
+"name":"Winter Denim Knit",
+"image":"outfits/3.png",
+"season":["höst","vinter"],
+"occasion":["weekend"]
+},
+
+{
+"id":4,
+"name":"Summer Office Classic",
+"image":"outfits/4.png",
+"season":["vår","sommar"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":5,
+"name":"Fredag 1: Modern Smart Casual",
+"image":"outfits/5.png",
+"season":["vår","höst"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":6,
+"name":"Lördag 1: Riviera Weekend",
+"image":"outfits/6.png",
+"season":["sommar"],
+"occasion":["weekend"]
+},
+
+{
+"id":8,
+"name":"Fredag 2: Casual Blazer Boots",
+"image":"outfits/8.png",
+"season":["vår","höst"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":9,
+"name":"Onsdag 1: Executive Denim",
+"image":"outfits/9.png",
+"season":["vår","höst"],
+"occasion":["work"]
+},
+
+{
+"id":10,
+"name":"Nordic Winter Minimal",
+"image":"outfits/10.png",
+"season":["vinter"],
+"occasion":["weekend"]
+},
+
+{
+"id":11,
+"name":"Forest Layer",
+"image":"outfits/11.png",
+"season":["vår","höst"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":12,
+"name":"Summer Minimal Classic",
+"image":"outfits/12.png",
+"season":["sommar"],
+"occasion":["weekend"]
+},
+
+{
+"id":13,
+"name":"Black Tee Denim",
+"image":"outfits/13.png",
+"season":["vår","sommar"],
+"occasion":["weekend"]
+},
+
+{
+"id":14,
+"name":"Skogschinos",
+"image":"outfits/14.png",
+"season":["vår","höst"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":44,
+"name":"Tisdag 1: Skjorta i grön ram",
+"image":"outfits/44.png",
+"season":["vår","höst"],
+"occasion":["work"]
+},
+
+{
+"id":15,
+"name":"Stadsskjorta",
+"image":"outfits/15.png",
+"season":["vår"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":16,
+"name":"Onsdag 2: Klassisk denim",
+"image":"outfits/16.png",
+"season":["vår","höst"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":17,
+"name":"Pariskavajen",
+"image":"outfits/17.png",
+"season":["vår"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":18,
+"name":"Enkel sommarbas",
+"image":"outfits/18.png",
+"season":["sommar"],
+"occasion":["weekend"]
+},
+
+{
+"id":19,
+"name":"Måndag 1: Casual kontor",
+"image":"outfits/19.png",
+"season":["vår","sommar"],
+"occasion":["work"]
+},
+
+{
+"id":20,
+"name":"Marin kväll",
+"image":"outfits/20.png",
+"season":["höst"],
+"occasion":["weekend"]
+},
+
+{
+"id":21,
+"name":"Tisdag 2: Ljus vardagsskjorta",
+"image":"outfits/21.png",
+"season":["vår","sommar"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":22,
+"name":"Modern flanell",
+"image":"outfits/22.png",
+"season":["höst","vinter"],
+"occasion":["work"]
+},
+
+{
+"id":23,
+"name":"Vinterminimalist",
+"image":"outfits/23.png",
+"season":["vinter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":24,
+"name":"Kontorskavaj",
+"image":"outfits/24.png",
+"season":["höst","vinter"],
+"occasion":["work"]
+},
+
+{
+"id":25,
+"name":"Torsdag 2: Grön kontorscasual",
+"image":"outfits/25.png",
+"season":["höst"],
+"occasion":["work"]
+},
+
+{
+"id":26,
+"name":"Marin helg",
+"image":"outfits/26.png",
+"season":["sommar"],
+"occasion":["weekend"]
+},
+
+{
+"id":27,
+"name":"Klassisk vinterlager",
+"image":"outfits/27.png",
+"season":["vinter"],
+"occasion":["work"]
+},
+
+{
+"id":28,
+"name":"Skogsminimalism",
+"image":"outfits/28.png",
+"season":["vår","sommar"],
+"occasion":["weekend"]
+},
+
+{
+"id":29,
+"name":"Ljus denimdag",
+"image":"outfits/29.png",
+"season":["sommar"],
+"occasion":["weekend"]
+},
+
+{
+"id":30,
+"name":"Måndag 2: Mjuk kontorskavaj",
+"image":"outfits/30.png",
+"season":["höst"],
+"occasion":["work"]
+},
+
+{
+"id":31,
+"name":"Urban komfort",
+"image":"outfits/31.png",
+"season":["höst","vinter"],
+"occasion":["weekend"]
+},
+
+{
+"id":32,
+"name":"Skogspromenad",
+"image":"outfits/32.png",
+"season":["vår"],
+"occasion":["weekend"]
+},
+
+{
+"id":34,
+"name":"Ren flanell",
+"image":"outfits/34.png",
+"season":["höst","vinter"],
+"occasion":["work"]
+},
+
+{
+"id":35,
+"name":"Lördag 2: Rost & denim",
+"image":"outfits/35.png",
+"season":["höst"],
+"occasion":["weekend"]
+},
+
+{
+"id":36,
+"name":"Fransk vinter",
+"image":"outfits/36.png",
+"season":["höst","vinter"],
+"occasion":["work"]
+},
+
+{
+"id":37,
+"name":"Torsdag 1: Grön vardag",
+"image":"outfits/37.png",
+"season":["vår","höst"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":38,
+"name":"Brun flanell",
+"image":"outfits/38.png",
+"season":["höst","vinter"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":39,
+"name":"Ljus kontorsbas",
+"image":"outfits/39.png",
+"season":["vår"],
+"occasion":["work"]
+},
+
+{
+"id":40,
+"name":"Höstchinos",
+"image":"outfits/40.png",
+"season":["höst"],
+"occasion":["work",
+"weekend"]
+},
+
+{
+"id":41,
+"name":"Denimlager",
+"image":"outfits/41.png",
+"season":["vår"],
+"occasion":["weekend"]
+},
+
+{
+"id":42,
+"name":"Casual kavajdag",
+"image":"outfits/42.png",
+"season":["vår"],
+"occasion":["work"]
+},
+
+{
+"id":43,
+"name":"Sommarskjorta",
+"image":"outfits/43.png",
+"season":["sommar"],
+"occasion":["work","weekend"]
+},
+
+{
+"id":45,
+"name":"Vit tee-klassikern",
+"image":"outfits/45.png",
+"season":["sommar"],
+"occasion":["weekend"]
+},
+
+{
+"id":46,
+"name":"Söndag 1: Höst i beige",
+"image":"outfits/46.png",
+"season":["höst"],
+"occasion":["weekend"]
+},
+
+{
+"id":47,
+"name":"Söndag 2: Stickad helg",
+"image":"outfits/47.png",
+"season":["höst","vinter"],
+"occasion":["weekend"]
+},
+
+{
+"id":48,
+"name":"Ljus denimskjorta",
+"image":"outfits/48.png",
+"season":["sommar"],
+"occasion":["work","weekend"]
+}
+
 ]
