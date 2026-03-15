@@ -1,1 +1,14 @@
+[
+{"outfit_id":1,"clothing_id":1},
+{"outfit_id":1,"clothing_id":2},
+{"outfit_id":1,"clothing_id":3},
+{"outfit_id":1,"clothing_id":4},
 
+{"outfit_id":2,"clothing_id":5},
+{"outfit_id":2,"clothing_id":6},
+{"outfit_id":2,"clothing_id":3},
+{"outfit_id":2,"clothing_id":7},
+
+{"outfit_id":3,"clothing_id":1},
+{"outfit_id":3,"clothing_id":7}
+]
