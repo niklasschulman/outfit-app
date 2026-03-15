@@ -256,14 +256,6 @@
 },
 
 {
-"id":33,
-"name":"Chat 2 1",
-"image":"outfits/33.png",
-"season":["spring","autumn","summer","winter"],
-"occasion":["work","weekend"]
-},
-
-{
 "id":34,
 "name":"Genbild 1",
 "image":"outfits/34.png",
