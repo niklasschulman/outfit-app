@@ -1,1 +1,25 @@
+[
+{
+"id":1,
+"name":"Jobb – kavaj",
+"image":"outfits/1.png",
+"season":["spring","autumn"],
+"occasion":["work"]
+},
 
+{
+"id":2,
+"name":"Helg – casual",
+"image":"outfits/2.png",
+"season":["spring","summer"],
+"occasion":["weekend"]
+},
+
+{
+"id":3,
+"name":"Sommar",
+"image":"outfits/3.png",
+"season":["summer"],
+"occasion":["weekend"]
+}
+]
