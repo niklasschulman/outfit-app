@@ -1,1 +1,26 @@
-
+[
+{"id":1,"name":"Vit t-shirt"},
+{"id":2,"name":"Ljusblå skjorta"},
+{"id":3,"name":"Icke synlig T-shirt"},
+{"id":4,"name":"Vit skjorta"},
+{"id":5,"name":"Grå skjorta"},
+{"id":6,"name":"Randig T-shirt"},
+{"id":7,"name":"Svart T-shirt"},
+{"id":8,"name":"Marinblå T-shirt"},
+{"id":9,"name":"Grön overshirt"},
+{"id":10,"name":"Blå tunn jacka"},
+{"id":11,"name":"Blå kavaj"},
+{"id":12,"name":"Gråspräcklig kavaj"},
+{"id":13,"name":"Grå stickad tröja tjock"},
+{"id":14,"name":"Grå stickad tröja tunn"},
+{"id":15,"name":"Brun overshirt"},
+{"id":16,"name":"Grå sweatshirt (crewneck)"},
+{"id":17,"name":"Beige chinos"},
+{"id":18,"name":"Mörka jeans"},
+{"id":19,"name":"Ljusa jeans"},
+{"id":20,"name":"Ull/flannellbyxor"},
+{"id":21,"name":"Blå chinos"},
+{"id":22,"name":"Vita sneakers"},
+{"id":23,"name":"Bruna boots"},
+{"id":24,"name":"Sneakers"}
+]
