@@ -1,3 +1,4 @@
+let favorites = JSON.parse(localStorage.getItem("favorites") || "[]")
 let clothes=[]
 let outfits=[]
 let outfitItems=[]
@@ -50,13 +51,31 @@ div.className="card"
 
 div.innerHTML=`
 
+<div class="favorite">
+${favorites.includes(o.id) ? "⭐" : "☆"}
+</div>
+
 <img src="${o.image}">
 
 <div class="cardTitle">
 ${o.name}
 </div>
-
 `
+div.querySelector(".favorite").onclick=(e)=>{
+
+e.stopPropagation()
+
+if(favorites.includes(o.id)){
+favorites=favorites.filter(x=>x!==o.id)
+}else{
+favorites.push(o.id)
+}
+
+localStorage.setItem("favorites",JSON.stringify(favorites))
+renderOutfits(outfits)
+
+}
+  
 
 div.onclick=()=>showDetail(o)
 
