@@ -141,9 +141,21 @@ const term=searchInput.value.toLowerCase()
 
 if(term){
 
+
 filtered=filtered.filter(o=>{
+
 const items=getItems(o.id).join(" ").toLowerCase()
-return items.includes(term)
+const name=o.name.toLowerCase()
+const season=o.season.join(" ").toLowerCase()
+const occasion=o.occasion.join(" ").toLowerCase()
+
+return (
+items.includes(term) ||
+name.includes(term) ||
+season.includes(term) ||
+occasion.includes(term)
+)
+
 })
 
 }
