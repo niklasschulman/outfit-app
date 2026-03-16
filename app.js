@@ -230,4 +230,31 @@ switchView("outfitsView")
 
 }
 
+document.querySelectorAll(".quickFilters button")
+.forEach(btn=>{
+
+btn.onclick=()=>{
+
+searchInput.value=btn.dataset.term
+applyFilters()
+
+}
+
+})
+
+document.getElementById("todayBtn").onclick=()=>{
+
+applyFilters()
+
+const cards=document.querySelectorAll(".card")
+
+if(cards.length){
+
+const r=Math.floor(Math.random()*cards.length)
+cards[r].click()
+
+}
+
+}
+
 loadData()
