@@ -108,7 +108,7 @@
 "name":"Tisdag 1: Skjorta i grön ram",
 "image":"outfits/44.png",
 "season":["vår","höst"],
-"occasion":["work"]
+"occasion":["work","dejt"]
 },
 
 {
@@ -124,7 +124,7 @@
 "name":"Onsdag 2: Klassisk denim",
 "image":"outfits/16.png",
 "season":["vår","höst"],
-"occasion":["work","weekend"]
+"occasion":["work","weekend","dejt"]
 },
 
 {
@@ -140,7 +140,7 @@
 "name":"Enkel sommarbas",
 "image":"outfits/18.png",
 "season":["sommar"],
-"occasion":["weekend"]
+"occasion":["weekend","socialt"]
 },
 
 {
@@ -148,7 +148,7 @@
 "name":"Måndag 1: Casual kontor",
 "image":"outfits/19.png",
 "season":["vår","sommar"],
-"occasion":["work"]
+"occasion":["work","toppdejt"]
 },
 
 {
@@ -156,7 +156,7 @@
 "name":"Marin kväll",
 "image":"outfits/20.png",
 "season":["höst"],
-"occasion":["weekend"]
+"occasion":["weekend","socialt"]
 },
 
 {
@@ -188,7 +188,7 @@
 "name":"Kontorskavaj",
 "image":"outfits/24.png",
 "season":["höst","vinter"],
-"occasion":["work"]
+"occasion":["work","toppdejt"]
 },
 
 {
@@ -204,7 +204,7 @@
 "name":"Marin helg",
 "image":"outfits/26.png",
 "season":["sommar"],
-"occasion":["weekend"]
+"occasion":["weekend","socialt"]
 },
 
 {
@@ -220,7 +220,7 @@
 "name":"Skogsminimalism",
 "image":"outfits/28.png",
 "season":["vår","sommar"],
-"occasion":["weekend"]
+"occasion":["weekend","socialt"]
 },
 
 {
@@ -236,7 +236,7 @@
 "name":"Måndag 2: Mjuk kontorskavaj",
 "image":"outfits/30.png",
 "season":["höst"],
-"occasion":["work"]
+"occasion":["work","toppdejt"]
 },
 
 {
@@ -244,7 +244,7 @@
 "name":"Urban komfort",
 "image":"outfits/31.png",
 "season":["höst","vinter"],
-"occasion":["weekend"]
+"occasion":["weekend","socialt"]
 },
 
 {
@@ -276,7 +276,7 @@
 "name":"Fransk vinter",
 "image":"outfits/36.png",
 "season":["höst","vinter"],
-"occasion":["work"]
+"occasion":["work","dejt"]
 },
 
 {
@@ -300,7 +300,7 @@
 "name":"Ljus kontorsbas",
 "image":"outfits/39.png",
 "season":["vår"],
-"occasion":["work"]
+"occasion":["work","dejt"]
 },
 
 {
@@ -325,7 +325,7 @@
 "name":"Casual kavajdag",
 "image":"outfits/42.png",
 "season":["vår"],
-"occasion":["work"]
+"occasion":["work","toppdejt"]
 },
 
 {
@@ -341,7 +341,7 @@
 "name":"Vit tee-klassikern",
 "image":"outfits/45.png",
 "season":["sommar"],
-"occasion":["weekend"]
+"occasion":["weekend","socialt"]
 },
 
 {
@@ -357,7 +357,7 @@
 "name":"Söndag 2: Stickad helg",
 "image":"outfits/47.png",
 "season":["höst","vinter"],
-"occasion":["weekend"]
+"occasion":["weekend","socialt"]
 },
 
 {
