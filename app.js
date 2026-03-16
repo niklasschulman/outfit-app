@@ -62,18 +62,14 @@ ${o.name}
 </div>
 `
 div.querySelector(".favorite").onclick=(e)=>{
-
 e.stopPropagation()
-
 if(favorites.includes(o.id)){
 favorites=favorites.filter(x=>x!==o.id)
 }else{
 favorites.push(o.id)
 }
-
 localStorage.setItem("favorites",JSON.stringify(favorites))
 renderOutfits(outfits)
-
 }
   
 
