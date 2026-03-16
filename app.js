@@ -187,8 +187,18 @@ seasonFilter.addEventListener("change",applyFilters)
 
 document.getElementById("randomBtn").onclick=()=>{
 
-const r=outfits[Math.floor(Math.random()*outfits.length)]
+applyFilters()
 
+const cards=document.querySelectorAll(".card")
+
+if(cards.length){
+
+const r=Math.floor(Math.random()*cards.length)
+
+cards[r].click()
+
+}
+  
 renderOutfits([r])
 
 }
