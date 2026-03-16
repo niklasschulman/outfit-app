@@ -39,6 +39,9 @@ function renderOutfits(list){
 
 grid.innerHTML=""
 
+document.getElementById("resultCount").innerText =
+list.length + " outfits"
+  
 list.forEach(o=>{
 
 const div=document.createElement("div")
