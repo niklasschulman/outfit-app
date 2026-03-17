@@ -285,26 +285,4 @@ showDetail(r)
 
 }
 
-document.querySelectorAll(".quickChips button")
-.forEach(btn=>{
 
-btn.onclick=()=>{
-
-const f=btn.dataset.filter
-
-if(f){
-occasionFilter.value=f
-applyFilters()
-}
-
-}
-
-})
-
-document.getElementById("favFilter").onclick=()=>{
-
-const filtered=outfits.filter(o=>favorites.includes(o.id))
-
-renderOutfits(filtered)
-
-}
