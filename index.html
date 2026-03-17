@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="sv">
 <head>
@@ -22,54 +23,53 @@
 
 <body>
 
-<header class="appHeader">
+<header>
 
-<div class="headerTop">
-
-<div class="avatar">N</div>
-
-<div>
 <h1>Niklas garderob</h1>
-<div class="subtitle">Din stil, varje dag</div>
-</div>
-
-</div>
-
-<div class="todayCard" id="todayCard">
-<span>Dagens outfit</span>
-<div id="todayName">Tryck för förslag</div>
-</div>
-
-<div class="quickChips">
-
-<button data-filter="work">💼 Jobb</button>
-<button data-filter="weekend">🍻 Helg</button>
-<button id="favFilter">⭐ Favoriter</button>
-
-</div>
 
 <div class="filters">
 
 <select id="occasionFilter">
-<option value="">Alla</option>
+<option value="">Alla tillfällen</option>
 <option value="work">Jobb</option>
 <option value="weekend">Helg</option>
+<option value="dejt">Dejt</option>
+<option value="toppdejt">Toppdejt</option>
+<option value="socialt">Socialt</option>
 </select>
 
 <select id="seasonFilter">
-<option value="">Alla</option>
+<option value="">Alla säsonger</option>
 <option value="sommar">Sommar</option>
 <option value="vinter">Vinter</option>
 <option value="vår">Vår</option>
 <option value="höst">Höst</option>
 </select>
 
-<input id="searchInput" placeholder="Sök plagg">
+<input
+id="searchInput"
+placeholder="Sök plagg">
 
-<button id="randomBtn">🎲</button>
+<button id="randomBtn">
+🎲
+</button>
 
 </div>
+<div id="resultCount"></div>
 
+<div class="quickFilters">
+<button data-term="kavaj">Kavaj</button>
+<button data-term="jeans">Jeans</button>
+<button data-term="t-shirt">T-shirt</button>
+<button data-term="overshirt">Overshirt</button>
+<button data-term="boots">Boots</button>
+</div>
+
+<button id="todayBtn">
+Vad ska jag ha idag?
+</button>
+
+<div id="resultCount"></div>
 </header>
 
 <main>
