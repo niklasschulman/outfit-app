@@ -273,3 +273,14 @@ cards[r].click()
 }
 
 loadData()
+
+
+document.getElementById("todayCard").onclick=()=>{
+
+const r=outfits[Math.floor(Math.random()*outfits.length)]
+
+document.getElementById("todayName").innerText=r.name
+
+showDetail(r)
+
+}
