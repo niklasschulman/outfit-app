@@ -91,16 +91,16 @@ detail.innerHTML=`
 
 <img src="${outfit.image}">
 
-<h2>${outfit.name}</h2>
+<h2>&nbsp;${outfit.name}</h2>
 
 <div class="itemsList">
 
-&nbsp;${items.join("<br>")}
+&nbsp;${items.join("<br>&nbsp;")}
 
 </div>
 
 <p>
-&nbsp;Säsonga: ${outfit.season.join(", ")}
+&nbsp;Säsong: ${outfit.season.join(", ")}
 </p>
 
 <p>
