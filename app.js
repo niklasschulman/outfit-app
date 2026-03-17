@@ -100,16 +100,12 @@ detail.innerHTML=`
 </div>
 
 <p>
-&nbsp;Säsong: ${outfit.season.join(", ")}
+&nbsp;Säsonga: ${outfit.season.join(", ")}
 </p>
 
 <p>
 &nbsp;Tillfälle: ${outfit.occasion.join(", ")}
-</p>
-<br>
-<br>
-<br>
-`
+</p>`
 
 switchView("detailView")
 
