@@ -300,3 +300,11 @@ applyFilters()
 }
 
 })
+
+document.getElementById("favFilter").onclick=()=>{
+
+const filtered=outfits.filter(o=>favorites.includes(o.id))
+
+renderOutfits(filtered)
+
+}
