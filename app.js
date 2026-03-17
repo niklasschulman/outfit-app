@@ -284,3 +284,19 @@ document.getElementById("todayName").innerText=r.name
 showDetail(r)
 
 }
+
+document.querySelectorAll(".quickChips button")
+.forEach(btn=>{
+
+btn.onclick=()=>{
+
+const f=btn.dataset.filter
+
+if(f){
+occasionFilter.value=f
+applyFilters()
+}
+
+}
+
+})
