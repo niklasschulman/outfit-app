@@ -95,18 +95,20 @@ detail.innerHTML=`
 
 <div class="itemsList">
 
-${items.join("<br>")}
+&nbsp;${items.join("<br>")}
 
 </div>
 
 <p>
-Säsong: ${outfit.season.join(", ")}
+&nbsp;Säsong: ${outfit.season.join(", ")}
 </p>
 
 <p>
-Tillfälle: ${outfit.occasion.join(", ")}
+&nbsp;Tillfälle: ${outfit.occasion.join(", ")}
 </p>
-
+<br>
+<br>
+<br>
 `
 
 switchView("detailView")
