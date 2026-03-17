@@ -195,42 +195,5 @@ padding: 8px;
 border-radius: 12px;
 }
 
-.appHeader h1{
-font-size: 20px;
-margin: 0;
-font-weight: 600;
-}
 
-.subtitle{
-font-size: 12px;
-opacity: 0.8;
-}
-
-.appHeader .filters{
-display: flex;
-gap: 6px;
-overflow-x: auto;
-padding-top: 6px;
-}
-
-.appHeader select,
-.appHeader input{
-border: none;
-border-radius: 10px;
-padding: 6px 8px;
-font-size: 13px;
-}
-
-.appHeader input{
-flex: 1;
-}
-
-.appHeader button{
-border: none;
-border-radius: 10px;
-padding: 6px 10px;
-background: white;
-}
-background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-color: #222;
 
