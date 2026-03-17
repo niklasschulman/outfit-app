@@ -170,30 +170,5 @@ padding:4px;
 font-size:14px;
 }
 
-.appHeader{
-background: linear-gradient(135deg, #1e3c72, #2a5298);
-color: white;
-padding: 16px 12px 12px 12px;
-border-bottom-left-radius: 20px;
-border-bottom-right-radius: 20px;
-position: sticky;
-top: 0;
-z-index: 10;
-}
-
-.headerTop{
-display: flex;
-align-items: center;
-gap: 12px;
-margin-bottom: 10px;
-}
-
-.logo{
-font-size: 26px;
-background: rgba(255,255,255,0.15);
-padding: 8px;
-border-radius: 12px;
-}
-
 
 
