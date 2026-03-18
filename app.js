@@ -254,6 +254,21 @@ applyFilters()
 
 })
 
+const lightbox=document.getElementById("lightbox")
+const lightboxImg=document.getElementById("lightboxImg")
+
+// öppna
+document.addEventListener("click",e=>{
+if(e.target.classList.contains("zoomable")){
+lightboxImg.src=e.target.src
+lightbox.classList.remove("hidden")
+}
+})
+
+// stäng
+lightbox.onclick=()=>{
+lightbox.classList.add("hidden")
+}
 
 
 loadData()
