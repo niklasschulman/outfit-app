@@ -8,7 +8,7 @@ background:#f4f4f4;
 }
 
 .appHeader{
-background: -webkit-linear-gradient(135deg, #ffffff, #ffffff);
+background: -webkit-linear-gradient(135deg, #f4f4f4, #f4f4f4);
 color: white;
 border-bottom-left-radius: 20px;
 border-bottom-right-radius: 20px;
@@ -38,7 +38,7 @@ border-radius: 12px;
 font-size: 20px;
 margin: 0;
 font-weight: 600;
-font-color: black;
+color: black;
 }
 
 .subtitle{
