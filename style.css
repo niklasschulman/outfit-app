@@ -190,9 +190,9 @@ margin-top:10px;
 }
 
 #resultCount{
-font-size:14px;
-color:#666;
-margin:8px 0;
+font-size:12px;
+opacity:0.8;
+margin:4px 4px 8px;
 }
 
 .quickFilters{
