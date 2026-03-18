@@ -88,8 +88,7 @@ const detail=document.getElementById("detailContent")
 const items=getItems(outfit.id)
 
 detail.innerHTML=`
-
-<img src="${outfit.image}">
+<img src="${outfit.image}" class="zoomable">
 
 <h2>&nbsp;${outfit.name}</h2>
 
