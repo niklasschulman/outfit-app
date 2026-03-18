@@ -57,8 +57,10 @@ padding-top: 6px;
 .appHeader input{
 border: none;
 border-radius: 10px;
-padding: 6px 8px;
+padding: 4px 6px;
 font-size: 16px;
+flex:1;
+min-width:0;
 }
 
 .appHeader select{
