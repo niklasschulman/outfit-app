@@ -9,7 +9,7 @@ background:#f4f4f4;
 }
 
 .appHeader{
-background: linear-gradient(135deg, #1e3c72, #2a5298);
+background: -webkit-linear-gradient(135deg, #ffffff, #ffffff);
 color: white;
 border-bottom-left-radius: 20px;
 border-bottom-right-radius: 20px;
