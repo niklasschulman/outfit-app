@@ -5,7 +5,6 @@ font-family:-apple-system,BlinkMacSystemFont;
 margin:0;
 padding:0;
 background:#f4f4f4;
-
 }
 
 .appHeader{
@@ -87,14 +86,12 @@ background:white;
 position:sticky;
 top:0;
 z-index:10;
-
 }
 
 h1{
 
 text-align:center;
 margin:5px 0;
-
 }
 
 .appHeader .filters{
@@ -109,13 +106,10 @@ padding:12px;
 font-size:16px;
 border-radius:10px;
 border:1px solid #ccc;
-
 }
 
 button{
-
 background:white;
-
 }
 
 .grid{
@@ -124,7 +118,6 @@ display:grid;
 grid-template-columns:repeat(2,1fr);
 gap:10px;
 padding:10px;
-
 }
 
 .card{
@@ -133,31 +126,25 @@ background:white;
 border-radius:10px;
 overflow:hidden;
 box-shadow:0 2px 6px rgba(0,0,0,0.15);
-
 }
 
 .card img{
 
 width:100%;
 display:block;
-
 }
 
 .cardTitle{
 
 padding:8px;
 font-size:14px;
-
 }
 
 .hidden{
-
 display:none;
-
 }
 
 .bottomNav{
-
 position:fixed;
 bottom:0;
 width:100%;
@@ -166,33 +153,26 @@ border-top:1px solid #ddd;
 display:flex;
 justify-content:space-around;
 padding:8px;
-
 }
 
 .bottomNav button{
-
 border:none;
 font-size:16px;
-
 }
 
 #detailContent img{
-
 width:100%;
 border-radius:10px;
-
 }
 
 .itemsList{
-
 margin-top:10px;
-
 }
 
 #resultCount{
-font-size:12px;
-opacity:0.8;
-margin:4px 4px 8px;
+font-size:13px;
+color:rgba(0,0,0,0.85);
+margin:6px 2px 8px 2px;
 }
 
 .quickFilters{
