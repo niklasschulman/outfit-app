@@ -20,6 +20,12 @@ box-sizing:border-box;
 padding:16px 12px;
 }
 
+input:focus,
+select:focus{
+  outline:none;
+  box-shadow:0 0 0 2px rgba(200,200,200,0.4);
+}
+
 .headerTop{
 display: flex;
 align-items: center;
