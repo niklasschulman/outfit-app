@@ -21,13 +21,14 @@ outfits=await o.json()
 
 const oi=await fetch("data/outfit_items.json")
 outfitItems=await oi.json()
+  
 outfits.forEach(o=>{
   o.items = getItems(o.id)
 })
 applyFilters()
-showDetail(outfit)
 renderOutfits(outfits)
 renderClothes()
+showDetail(outfit)
 
 }
 function updateFavButton(){
@@ -110,7 +111,7 @@ const links=outfitItems.filter(x=>x.outfit_id===outfitId)
 
 return links.map(l=>{
 const item=clothes.find(c=>c.id===l.clothing_id)
-return item.name
+return item ? item.name : ""
 })
 
 }
