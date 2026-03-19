@@ -20,7 +20,9 @@ outfits=await o.json()
 
 const oi=await fetch("data/outfit_items.json")
 outfitItems=await oi.json()
-
+outfits.forEach(o=>{
+  o.items = getItems(o.id)
+})
 applyFilters()
 renderOutfits(outfits)
 renderClothes()
