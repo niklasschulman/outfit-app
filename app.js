@@ -352,6 +352,14 @@ const random=filtered[Math.floor(Math.random()*filtered.length)]
 showDetail(random)
 
 }
+
+document.getElementById("favBtn").onclick=()=>{
+
+const filtered=outfits.filter(o=>favorites.includes(o.id))
+
+renderOutfits(filtered)
+
+}
 loadData()
 
 
