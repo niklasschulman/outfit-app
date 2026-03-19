@@ -322,6 +322,36 @@ document.getElementById("statsBtn").onclick = showStats
 outfits.forEach(o=>{
 o.items=getItems(o.id)
 })
+
+document.getElementById("weatherBtn").onclick=async()=>{
+
+const pos=await new Promise(resolve=>{
+navigator.geolocation.getCurrentPosition(resolve)
+})
+
+const lat=pos.coords.latitude
+const lon=pos.coords.longitude
+
+const r=await fetch(
+`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`
+)
+
+const data=await r.json()
+const temp=data.current_weather.temperature
+
+let season="sommar"
+
+if(temp<5) season="vinter"
+else if(temp<12) season="höst"
+else if(temp<20) season="vår"
+
+const filtered=outfits.filter(o=>o.season.includes(season))
+
+const random=filtered[Math.floor(Math.random()*filtered.length)]
+
+showDetail(random)
+
+}
 loadData()
 
 
