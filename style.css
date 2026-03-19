@@ -282,3 +282,10 @@ padding:10px;
 .actionsRow button.active{
 background:#ffd700;
 }
+#detailFav{
+font-size:20px;
+}
+
+#detailFav:active{
+transform:scale(1.2);
+}
