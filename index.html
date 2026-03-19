@@ -24,17 +24,20 @@
 
 <header class="appHeader">
 <h1>Niklas garderob</h1>
-
 <div class="filters">
-<div>
-<button id="recommendBtn">✨</button>
+
+<!-- RAD 1: ACTIONS -->
+<div class="filterRow actionsRow">
 <button id="randomBtn">🎲</button>
+<button id="favBtn">⭐</button>
 <button id="statsBtn">📊</button>
 <button id="weatherBtn">🌤</button>
-<button id="favBtn">⭐</button>
+<button id="recommendBtn">✨</button>
 </div>
-  <div>
-  <select id="occasionFilter">
+
+<!-- RAD 2: FILTER -->
+<div class="filterRow">
+<select id="occasionFilter">
 <option value="">Alla</option>
 <option value="work">Jobb</option>
 <option value="weekend">Helg</option>
@@ -50,19 +53,15 @@
 <option value="vår">Vår</option>
 <option value="höst">Höst</option>
 </select>
+</div>
 
-<input
-id="searchInput"
-placeholder="Sök plagg">
+<!-- RAD 3: SÖK -->
+<div class="filterRow">
+<input id="searchInput" placeholder="Sök plagg">
 </div>
+
 </div>
-<div class="quickFilters">
-<button data-term="kavaj">Kavaj</button>
-<button data-term="jeans">Jeans</button>
-<button data-term="t-shirt">T-shirt</button>
-<button data-term="overshirt">Overshirt</button>
-<button data-term="boots">Boots</button>
-</div>
+
 
 <div id="resultCount"></div>
 </header>
