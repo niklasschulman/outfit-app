@@ -211,8 +211,8 @@ cards[r].click()
 
 }
   
-renderOutfits([r])
-
+const rIndex=Math.floor(Math.random()*cards.length)
+cards[rIndex].click()
 }
 
 function switchView(view){
