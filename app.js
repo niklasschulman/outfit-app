@@ -1,3 +1,4 @@
+let showFavoritesOnly = false
 let favorites = JSON.parse(localStorage.getItem("favorites") || "[]")
 let clothes=[]
 let outfits=[]
@@ -28,7 +29,17 @@ renderOutfits(outfits)
 renderClothes()
 
 }
+function updateFavButton(){
 
+const btn = document.getElementById("favBtn")
+
+if(showFavoritesOnly){
+btn.style.background = "#ffd700"
+}else{
+btn.style.background = ""
+}
+
+}
 function getRecommendation(){
 
 const occ=occasionFilter.value
@@ -217,7 +228,9 @@ switchView("outfitsView")
 function applyFilters(){
 
 let filtered=[...outfits]
-
+if(showFavoritesOnly){
+filtered = filtered.filter(o=>favorites.includes(o.id))
+}
 const term=searchInput.value.toLowerCase()
 
 if(term){
@@ -356,10 +369,14 @@ showDetail(random)
 }
 
 document.getElementById("favBtn").onclick=()=>{
-
-const filtered=outfits.filter(o=>favorites.includes(o.id))
-
+showFavoritesOnly = !showFavoritesOnly
+if(showFavoritesOnly){
+const filtered = outfits.filter(o=>favorites.includes(o.id))
 renderOutfits(filtered)
+}else{
+applyFilters() // tillbaka till normalt läge
+}
+updateFavButton()
 
 }
 loadData()
