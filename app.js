@@ -287,3 +287,11 @@ candidates=[...outfits]
 return candidates[Math.floor(Math.random()*candidates.length)]
 
 }
+
+document.getElementById("recommendBtn").onclick=()=>{
+
+const r=getRecommendation()
+
+showDetail(r)
+
+}
