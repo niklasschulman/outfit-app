@@ -230,3 +230,19 @@ border-radius: 12px;
 color: white;
 font-size: 13px;
 }
+
+button{
+transition:all 0.15s ease;
+}
+
+button:active{
+transform:scale(0.95);
+}
+
+.card{
+transition:all 0.2s ease;
+}
+
+.card:hover{
+transform:translateY(-2px);
+}
