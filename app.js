@@ -9,6 +9,7 @@ const searchInput=document.getElementById("searchInput")
 const occasionFilter=document.getElementById("occasionFilter")
 const seasonFilter=document.getElementById("seasonFilter")
 
+
 async function loadData(){
 
 const c=await fetch("data/clothes.json")
@@ -23,6 +24,68 @@ outfitItems=await oi.json()
 applyFilters()
 renderOutfits(outfits)
 renderClothes()
+
+}
+
+function getRecommendation(){
+
+const occ=occasionFilter.value
+const season=seasonFilter.value
+
+let candidates=[...outfits]
+
+// filtrera på tillfälle
+if(occ){
+candidates=candidates.filter(o=>o.occasion.includes(occ))
+}
+
+// filtrera på säsong
+if(season){
+candidates=candidates.filter(o=>o.season.includes(season))
+}
+
+// fallback om inget hittas
+if(candidates.length===0){
+candidates=[...outfits]
+}
+
+// slumpa från relevanta
+return candidates[Math.floor(Math.random()*candidates.length)]
+
+}
+
+document.getElementById("recommendBtn").onclick=()=>{
+
+const r=getRecommendation()
+
+showDetail(r)
+
+}
+
+function showStats(){
+
+const stats={}
+
+outfitItems.forEach(i=>{
+
+const item=clothes.find(c=>c.id===i.clothing_id)
+
+stats[item.name]=(stats[item.name]||0)+1
+
+})
+
+let html="<h2>Mest använda plagg</h2>"
+
+Object.entries(stats)
+.sort((a,b)=>b[1]-a[1])
+.slice(0,8)
+.forEach(s=>{
+html+=`${s[0]} – ${s[1]} outfits<br>`
+})
+
+document.getElementById("detailContent").innerHTML=html
+
+switchView("detailView")
 
 }
 
@@ -255,70 +318,11 @@ applyFilters()
 })
 
 
-
-loadData()
+document.getElementById("statsBtn").onclick = showStats
 outfits.forEach(o=>{
 o.items=getItems(o.id)
 })
+loadData()
 
-function getRecommendation(){
 
-const occ=occasionFilter.value
-const season=seasonFilter.value
 
-let candidates=[...outfits]
-
-// filtrera på tillfälle
-if(occ){
-candidates=candidates.filter(o=>o.occasion.includes(occ))
-}
-
-// filtrera på säsong
-if(season){
-candidates=candidates.filter(o=>o.season.includes(season))
-}
-
-// fallback om inget hittas
-if(candidates.length===0){
-candidates=[...outfits]
-}
-
-// slumpa från relevanta
-return candidates[Math.floor(Math.random()*candidates.length)]
-
-}
-
-document.getElementById("recommendBtn").onclick=()=>{
-
-const r=getRecommendation()
-
-showDetail(r)
-
-}
-
-function showStats(){
-
-const stats={}
-
-outfitItems.forEach(i=>{
-
-const item=clothes.find(c=>c.id===i.clothing_id)
-
-stats[item.name]=(stats[item.name]||0)+1
-
-})
-
-let html="<h2>Mest använda plagg</h2>"
-
-Object.entries(stats)
-.sort((a,b)=>b[1]-a[1])
-.slice(0,8)
-.forEach(s=>{
-html+=`${s[0]} – ${s[1]} outfits<br>`
-})
-
-document.getElementById("detailContent").innerHTML=html
-
-switchView("detailView")
-
-}
