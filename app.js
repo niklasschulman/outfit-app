@@ -116,8 +116,14 @@ return item.name
 }
 
 function renderOutfits(list){
-
 grid.innerHTML=""
+
+  list = [...list].sort((a, b)=>{
+  const aFav = favorites.includes(a.id)
+  const bFav = favorites.includes(b.id)
+  if(aFav==bFav) return 0
+  return aFav ? -1 : 1
+})
 
 document.getElementById("resultCount").innerText =
 list.length + " outfits"
