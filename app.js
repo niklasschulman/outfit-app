@@ -32,6 +32,7 @@ renderClothes()
 function updateFavButton(){
 
 const btn = document.getElementById("favBtn")
+  btn.classList.toggle("active", showFavoritesOnly)
 
 if(showFavoritesOnly){
 btn.style.background = "#ffd700"
