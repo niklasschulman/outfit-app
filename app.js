@@ -168,7 +168,12 @@ const items=getItems(outfit.id)
 detail.innerHTML=`
 <img src="${outfit.image}" class="zoomable">
 
-<h2>&nbsp;${outfit.name}</h2>
+<h2>
+${outfit.name}
+<span id="detailFav" style="margin-left:10px; cursor:pointer;">
+${favorites.includes(outfit.id) ? "⭐" : "☆"}
+</span>
+</h2>
 
 <div class="itemsList">
 
@@ -183,6 +188,20 @@ detail.innerHTML=`
 <p>
 &nbsp;Tillfälle: ${outfit.occasion.join(", ")}
 </p>`
+document.getElementById("detailFav").onclick = ()=>{
+
+if(favorites.includes(outfit.id)){
+favorites = favorites.filter(x=>x!==outfit.id)
+}else{
+favorites.push(outfit.id)
+}
+
+localStorage.setItem("favorites", JSON.stringify(favorites))
+
+// uppdatera ikon direkt
+showDetail(outfit)
+
+}
 
 switchView("detailView")
 
