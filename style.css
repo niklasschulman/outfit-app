@@ -8,8 +8,8 @@ background:#f4f4f4;
 }
 
 .appHeader{
-background: -webkit-linear-gradient(135deg, #f4f4f4, #f4f4f4);
-color: white;
+background:#f4f4f4;
+color:#222;
 border-bottom-left-radius: 20px;
 border-bottom-right-radius: 20px;
 position: sticky;
@@ -40,7 +40,7 @@ padding: 8px;
 border-radius: 12px;
 }
 
-.appHeader h1{
+.app h1{
 font-size: 20px;
 margin: 0;
 font-weight: 600;
@@ -52,15 +52,15 @@ font-size: 12px;
 opacity: 0.8;
 }
 
-.appHeader .filters{
+.app .filters{
 display: flex;
 gap: 6px;
 overflow-x: auto;
 padding-top: 6px;
 }
 
-.appHeader select,
-.appHeader input{
+.app select,
+.app input{
 border: none;
 border-radius: 10px;
 padding: 4px 6px;
@@ -69,31 +69,23 @@ flex:1;
 min-width:0;
 }
 
-.appHeader select{
+.app select{
 flex:1;
 min-width:80px;
 }
 
-.appHeader input{
+.app input{
 flex:2;
 min-width:120px;
 }
 
-.appHeader button{
+.app button{
 border: none;
 border-radius: 10px;
 padding: 6px 10px;
 background: white;
 }
 
-header{
-
-padding:10px;
-background:white;
-position:sticky;
-top:0;
-z-index:10;
-}
 
 h1{
 
@@ -128,13 +120,7 @@ gap:10px;
 padding:10px;
 }
 
-.card{
 
-background:white;
-border-radius:10px;
-overflow:hidden;
-box-shadow:0 2px 6px rgba(0,0,0,0.15);
-}
 
 .card img{
 
