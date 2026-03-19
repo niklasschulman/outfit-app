@@ -362,5 +362,7 @@ renderOutfits(filtered)
 }
 loadData()
 
-
+outfits.forEach(o=>{
+o.items=getItems(o.id)
+})
 
