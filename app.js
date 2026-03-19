@@ -295,3 +295,30 @@ const r=getRecommendation()
 showDetail(r)
 
 }
+
+function showStats(){
+
+const stats={}
+
+outfitItems.forEach(i=>{
+
+const item=clothes.find(c=>c.id===i.clothing_id)
+
+stats[item.name]=(stats[item.name]||0)+1
+
+})
+
+let html="<h2>Mest använda plagg</h2>"
+
+Object.entries(stats)
+.sort((a,b)=>b[1]-a[1])
+.slice(0,8)
+.forEach(s=>{
+html+=`${s[0]} – ${s[1]} outfits<br>`
+})
+
+document.getElementById("detailContent").innerHTML=html
+
+switchView("detailView")
+
+}
