@@ -25,6 +25,7 @@ outfits.forEach(o=>{
   o.items = getItems(o.id)
 })
 applyFilters()
+showDetail(outfit)
 renderOutfits(outfits)
 renderClothes()
 
