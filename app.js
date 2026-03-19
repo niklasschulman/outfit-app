@@ -158,8 +158,7 @@ if(term){
 
 
 filtered=filtered.filter(o=>{
-
-const items=getItems(o.id).join(" ").toLowerCase()
+const items=o.items.join(" ").toLowerCase()
 const name=o.name.toLowerCase()
 const season=o.season.join(" ").toLowerCase()
 const occasion=o.occasion.join(" ").toLowerCase()
@@ -257,3 +256,6 @@ applyFilters()
 
 
 loadData()
+outfits.forEach(o=>{
+o.items=getItems(o.id)
+})
