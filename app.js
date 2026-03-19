@@ -260,3 +260,30 @@ loadData()
 outfits.forEach(o=>{
 o.items=getItems(o.id)
 })
+
+function getRecommendation(){
+
+const occ=occasionFilter.value
+const season=seasonFilter.value
+
+let candidates=[...outfits]
+
+// filtrera på tillfälle
+if(occ){
+candidates=candidates.filter(o=>o.occasion.includes(occ))
+}
+
+// filtrera på säsong
+if(season){
+candidates=candidates.filter(o=>o.season.includes(season))
+}
+
+// fallback om inget hittas
+if(candidates.length===0){
+candidates=[...outfits]
+}
+
+// slumpa från relevanta
+return candidates[Math.floor(Math.random()*candidates.length)]
+
+}
