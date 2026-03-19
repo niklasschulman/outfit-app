@@ -289,3 +289,7 @@ font-size:20px;
 #detailFav:active{
 transform:scale(1.2);
 }
+
+.card{
+  position: relative;
+}
