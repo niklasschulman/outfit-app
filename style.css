@@ -8,16 +8,19 @@ background:#f4f4f4;
 }
 
 .appHeader{
-background:#f4f4f4;
+position: sticky;
+background: rgba(255,255,255,0.7);
+backdrop-filter: blur(12px);
 color:#222;
 border-bottom-left-radius: 20px;
 border-bottom-right-radius: 20px;
+border-bottom: 1px solid rgba(0,0,0,0.05);
 position: sticky;
 top: 0;
 z-index: 10;
 width:100%;
 box-sizing:border-box;
-padding:16px 12px;
+padding: 10px;
 }
 
 .zoomable{
